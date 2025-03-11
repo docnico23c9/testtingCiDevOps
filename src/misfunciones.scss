@@ -1,0 +1,13 @@
+@function color($color-name){
+    @return var(--color-#{$color-name});
+}
+@function fontweight($fontweight){
+    @return var(--fontweight-#{$fontweight});
+}
+
+.caja{
+    h1{
+        color: blueviolet;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}

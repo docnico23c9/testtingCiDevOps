@@ -1,0 +1,42 @@
+<p>Formularios reactivos!</p>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name"
+        formControlName="name" placeholder="Enter your name">
+    </div>
+
+
+        <label >Telefono:
+ <input type="tel" formControlName="tel">
+</label>
+    
+        
+
+
+<label >Actividad
+        <select  formControlName="sector" > 
+        <option value="">Selecione una opcion</option>
+        <option value="Comercio">Comercio</option>
+        <option value="Servicio">Servicios</option>
+        <option value="Educacion">Docencia</option>
+    </select>    
+
+</label>
+    <label >
+        Lenguajes de programacion utilizados
+        <select multiple formControlName="lags">
+        <option value="Angular">angular</option>
+        <option value="Java">Java</option>
+        <option value="Php">php</option>
+      
+    </select>
+    </label>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
+<h2>Valores</h2>
+<h3>Interpolacion | json</h3>
+<pre> {{form().value | json}}</pre>

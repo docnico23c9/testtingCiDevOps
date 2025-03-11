@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+//@import "misfunciones.scss";
+@use "misfunciones.scss";
+@use "main.scss";
+
+:root{
+    --color-primary:blue;
+    --color-secundary:rgb(202,199,199);
+    --color-white:#ffff;
+    --fontweignt-bold:900;
+    --fontweignt-normal:500;
+
+}
