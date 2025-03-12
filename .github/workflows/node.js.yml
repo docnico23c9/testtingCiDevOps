@@ -1,42 +1,12 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-# nombre del flujo de trabajo 
+
 name: lo que sea
-#name: Node.js CI
-
-# cuando se tiene que ejecutar
 on:
-# cuando se hace push en la rama main
   push:
-    branches: [ "main" ]
- # o cuando se hace una pull_request   
-  # pull_request:
-   # branches: [ "main" ]
-
-# identificamos los trabajos dentro de ese flujo de trabajo
+    branches: ["main"]
 jobs:
-  # nombre que define este trabajo build:
   trabajo18h:
-
-# en que S.O. se tiene que ejecutar
     runs-on: ubuntu-latest
 
-   # strategy:
-    #  matrix:
-     #   node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-# pasos para utilizar los diferentes accions 
     steps:
-    - name: "Hello World"
-    run: echo "Hello World"
-   # - name: "Dime la fecha"
-    #run: date
-   # - uses: actions/checkout@v4
-   # - name: Use Node.js ${{ matrix.node-version }}
-    #  uses: actions/setup-node@v4
-     # with:
-      #  node-version: ${{ matrix.node-version }}
-       # cache: 'npm'
-    # - run: npm ci
-    #- run: npm run build --if-present
-    #- run: npm test
+      - name: Hello-World
+        run: echo 'Hello World'
