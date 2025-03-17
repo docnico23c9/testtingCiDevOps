@@ -5,8 +5,9 @@ on:
     branches: ["main"]
 jobs:
   trabajo18h:
+    
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Hello-World
         run: echo 'Hello World'
@@ -14,4 +15,11 @@ jobs:
         run: date
       - name: 'Muestra el contenido del directorio'
         run: ls
+      - name: Hello-World2
+        run: echo 'Hello World2'
+      - name: "Nuevamente yo"
+        run: echo "Hola nuevamente"
+                
+
+
 
